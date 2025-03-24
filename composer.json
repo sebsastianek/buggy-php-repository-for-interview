@@ -1,0 +1,14 @@
+{
+  "name": "example/sample-invalid-project",
+  "description": "Przykładowy projekt",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "monolog/monolog": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
