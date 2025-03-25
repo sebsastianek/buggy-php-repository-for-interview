@@ -15,6 +15,7 @@ class UserManager
         $this->db = $db_connection;
         $this->logger = new Logger('user_manager');
         $this->logger->pushHandler(new StreamHandler('logs/app.log', Logger::INFO));
+        $this->logger->info(self::class . " initialized");
     }
 
     public function getAllUsers()
